@@ -174,14 +174,14 @@ module.exports = {
           'css-loader',
         ],
       },
-        {
-          test: /\.(jng|bmp|dcx|gif|icns|ico|jbig2|jpe|jpeg|jpg|pam|pbm|pcx|pgm|png|pnm|ppm|psd|rgbe|tga|tif|tiff|wbmp|xbm|xpm|svg|svgz|webp|heif|heic)$/i,
-          type: 'asset',
-          generator: {
-            emit: true,
-            filename: '[name][ext]',
-          },
+      {
+        test: /\.(jng|bmp|dcx|gif|icns|ico|jbig2|jpe|jpeg|jpg|pam|pbm|pcx|pgm|png|pnm|ppm|psd|rgbe|tga|tif|tiff|wbmp|xbm|xpm|svg|svgz|webp|heif|heic)$/i,
+        type: 'asset',
+        generator: {
+          emit: true,
+          filename: '[name][ext]',
         },
+      },
     ],
   },
   name: 'webpack.config.js',
