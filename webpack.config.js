@@ -144,6 +144,7 @@ module.exports = {
   entry: {
     index: {
       import: [
+        'webpack-dev-server/client/index.js?logging=info&progress=true&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=Infinity&hot=true&live-reload=true',
         './src/index.css',
         './src/index.js',
       ],
@@ -160,9 +161,6 @@ module.exports = {
         },
       ],
     },
-  },
-  externalsPresets: {
-    web: true,
   },
   mode: 'development',
   module: {
