@@ -139,9 +139,6 @@ module.exports = {
       type: 'http',
     },
     setupExitSignals: true,
-    watchFiles: [
-      'src/**/*.*',
-    ],
     webSocketServer: 'ws',
   },
   entry: {
@@ -163,6 +160,9 @@ module.exports = {
         },
       ],
     },
+  },
+  externalsPresets: {
+    web: true,
   },
   mode: 'development',
   module: {
