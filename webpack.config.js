@@ -49,48 +49,6 @@ module.exports = {
     hot: true,
     liveReload: true,
     open: [
-      // Microsoft Edge browser on Windows platform.
-      {
-        target: [
-          'http://localhost:8100/index.html',
-        ],
-        app: {
-          name: [
-            'msedge',
-          ],
-          arguments: [
-            '--new-window',
-          ],
-        },
-      },
-      // Chrome browser on Windows platform.
-      {
-        target: [
-          'http://localhost:8100/index.html',
-        ],
-        app: {
-          name: [
-            'chrome',
-          ],
-          arguments: [
-            '--new-window',
-          ],
-        },
-      },
-      // Firefox browser on Windows platform.
-      {
-        target: [
-          'http://localhost:8100/index.html',
-        ],
-        app: {
-          name: [
-            'firefox',
-          ],
-          arguments: [
-            '--new-window',
-          ],
-        },
-      },
       // Opera browser on Windows platform.
       {
         target: [
@@ -113,20 +71,6 @@ module.exports = {
         app: {
           name: [
             'Google Chrome',
-          ],
-          arguments: [
-            '--new-window',
-          ],
-        },
-      },
-      // Chrome browser on Linux platform.
-      {
-        target: [
-          'http://localhost:8100/index.html',
-        ],
-        app: {
-          name: [
-            'google-chrome',
           ],
           arguments: [
             '--new-window',
